@@ -5,10 +5,10 @@ OrganoMind
 </h1>
 
 <p align="center">
-  ![Python](https://img.shields.io/badge/Python-3.10-blue)
-  ![Streamlit](https://img.shields.io/badge/Streamlit-blue?logo=streamlit)
-  ![RDKit](https://img.shields.io/badge/RDKit-green)
-  ![License](https://img.shields.io/badge/License-MIT-yellow)
+  <img src="https://img.shields.io/badge/Python-3.10-blue"/>
+  <img src="https://img.shields.io/badge/Streamlit-blue?logo=streamlit"/>
+  <img src="https://img.shields.io/badge/RDKit-green"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow"/>
 </p>
 
 

@@ -128,6 +128,9 @@ OrganoMind supports multiple input formats. In the Search tab, select your searc
  
 > **Tip:** SMILES input gives the most accurate structure results.
  
+ <p align="center">
+  <img src="assets/search-aspirin.PNG" alt="Search aspirin" width="900"/>
+</p>
 
  
 ### 🎨Draw a molecule🎨

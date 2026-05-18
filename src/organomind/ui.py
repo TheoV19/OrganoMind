@@ -189,7 +189,7 @@ with tab1:
 
     if query:
         with st.spinner("Searching PubChem..."):
-            results = pcp.get_compounds(query, search_type)
+            results = pcp.get_compounds(query, search_type.lower())
             if results:
                 compound = results[0]
                 st.success(f"Found: {compound.iupac_name or query}")

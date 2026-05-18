@@ -12,6 +12,11 @@ OrganoMind
 </p>
 
 
+<p align="center">
+  <img src="assets/interface-full.png" alt="OrganoMind interface" width="900"/>
+</p>
+
+
 
 ## 📚General informations📚
 OrganoMind is a project developped as part of Practical Progamming in chemistry EPFL (2026) during second year of study. OrganoMind is thought as a organic chemistry assistant that allows 3D visualization of molecules with built-in features that give both chemical and stereochemical properties that allows better understanding of chemical processes. 
@@ -123,13 +128,15 @@ OrganoMind supports multiple input formats. In the Search tab, select your searc
  
 > **Tip:** SMILES input gives the most accurate structure results.
  
-<p align="center">
-  <img src="assets/Usage name.PNG" alt="Web page picture 1"/>
-</p>
+
  
 ### 🎨Draw a molecule🎨
  
 Switch to the Draw tab to use the built-in Ketcher molecular editor. Draw your molecule directly on the canvas and OrganoMind will automatically identify and analyze it.
+
+<p align="center">
+  <img src="assets/ketcher-aspirin.png" alt="Aspirin drawn in Ketcher editor" width="900"/>
+</p>
  
 
  

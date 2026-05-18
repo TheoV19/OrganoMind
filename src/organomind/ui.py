@@ -182,7 +182,7 @@ with tab1:
     with col1:
         search_type = st.selectbox(
             "Search by:",
-            ["name", "formula", "smiles", "inchi", "inchikey"]
+            ["Name", "Formula", "SMILES", "Inchi", "Inchikey"]
         )
     with col2:
         query = st.text_input("Enter molecule")

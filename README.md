@@ -1,4 +1,4 @@
-![OrganoMind Logo](image.png)
+![OrganoMind Logo](assets/image.png)
 
 <h1 align="center">
 OrganoMind

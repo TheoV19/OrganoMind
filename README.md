@@ -13,7 +13,7 @@ OrganoMind
 
 
 <p align="center">
-  <img src="assets/interface-full.png" alt="OrganoMind interface" width="900"/>
+  <img src="assets/interface-full.PNG" alt="OrganoMind interface" width="900"/>
 </p>
 
 
@@ -135,7 +135,7 @@ OrganoMind supports multiple input formats. In the Search tab, select your searc
 Switch to the Draw tab to use the built-in Ketcher molecular editor. Draw your molecule directly on the canvas and OrganoMind will automatically identify and analyze it.
 
 <p align="center">
-  <img src="assets/ketcher-aspirin.png" alt="Aspirin drawn in Ketcher editor" width="900"/>
+  <img src="assets/ketcher-aspirin.PNG" alt="Aspirin drawn in Ketcher editor" width="900"/>
 </p>
  
 

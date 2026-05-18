@@ -49,7 +49,7 @@ Already convinced ? Let us show you how to install it and enjoy all the features
 ## ⚙️ Installation ⚙️
 
 ### Prerequisites
-- Python 3.10 or higher
+- Python 3.10.20
 - pip
 
 ### Steps
@@ -74,8 +74,11 @@ git clone https://github.com/TheoV19/OrganoMind.git
 #Naviguate to the Organomind folder
 cd path/to/organomind
 
-#Installs the dependencies locally in editable mode, make sure to activate your environment before doing so
+#Installs the dependencies locally as a user, make sure to activate your environment before doing so 
 pip install .
+    or
+#Installs the dependencies locally in editable mode, make sure to activate your environment before doing so
+pip install -e . 
 ```
 
 *B. Only using the package:*

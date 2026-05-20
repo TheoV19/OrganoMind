@@ -6,10 +6,6 @@ from organomind.functional_groups import detect_functional_groups #type: ignore
 import pandas as pd #type: ignore
 import streamlit as st  #type:ignore
 
-# Table HSAB : pour chaque groupe fonctionnel
-# Valeurs calibrées pour pH = 7 (environnement neutre)
-# nucleo : plus négatif = meilleur nucléophile
-# electro : plus positif = meilleur électrophile
  
 def electro_nucleo_sites_hsab(mol):
     """
@@ -30,13 +26,7 @@ def electro_nucleo_sites_hsab(mol):
                    - symbol          (str)   : atomic symbol
                    - functional_group(str)   : detected functional group
                    - type            (str)   : 'electrophile' or 'nucleophile'
-        
-    Limitation: In molecules containing both thiol (SH) and carboxylate 
-    (COO-) groups, the COO- may score higher due to its larger Gasteiger 
-    charge. In practice, thiols are kinetically preferred nucleophiles 
-    (soft nucleophile, HSAB theory) but this cannot be captured by 
-    Gasteiger charges alone. Fukui indices (xTB) would be needed for 
-    accurate prediction in such cases.              
+                     
     """
     smiles = mol if isinstance(mol, str) else Chem.MolToSmiles(mol)
     if isinstance(mol, str):
@@ -44,10 +34,10 @@ def electro_nucleo_sites_hsab(mol):
  
     rdPartialCharges.ComputeGasteigerCharges(mol)
  
-    # Détecter les groupes fonctionnels
+    
     groups = detect_functional_groups(smiles, return_df=False)
  
-    # Construire dict {atom_idx: group_name} en gardant le groupe HSAB le plus fort
+    
     atom_to_group = {}
     for group_name, info in groups.items():
         if group_name not in HSAB_rules:
@@ -74,12 +64,12 @@ def electro_nucleo_sites_hsab(mol):
         hsab         = HSAB_rules.get(group, {"nucleo": 0.0, "electro": 0.0})
         formal_charge = atom.GetFormalCharge()
  
-        # Correction pour charges formelles (ex: O- ou N+)
+        
         formal_bonus = 0.0
         if formal_charge < 0:
-            formal_bonus = -0.50  # atome chargé négativement → meilleur nucléophile
+            formal_bonus = -0.50  
         elif formal_charge > 0:
-            formal_bonus =  0.50  # atome chargé positivement → moins nucléophile
+            formal_bonus =  0.50 
  
         nuc_score  = round(charge + hsab["nucleo"]  + formal_bonus, 4)
         elec_score = round(charge + hsab["electro"], 4)

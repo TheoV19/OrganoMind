@@ -12,28 +12,19 @@ from organomind.nucelo_electro import electro_nucleo_sites_hsab
 from organomind.highlight_functional_groups import draw_molecule_with_functional_groups
 from organomind.cas import filter_cas
 
-
-# =========================
-# PAGE CONFIG
-# =========================
 st.set_page_config(
     page_title="OrganoMind",
     page_icon="🧪",
     layout="wide"
 )
 
-# =========================
-# HEADER
-# =========================
 st.title("🧪 OrganoMind")
 st.caption("Organic Chemistry Assistant · PubChem + RDKit")
 st.caption("EPFL · 2nd Year · Practical Programming in Chemistry · 2026")
 
 st.markdown("---")
 
-# =========================
-# INTRODUCTION
-# =========================
+
 st.markdown("""
 **OrganoMind** is an organic chemistry assistant that enables **3D visualization of molecules**
 with built-in features providing chemical and stereochemical properties — helping you better
@@ -59,9 +50,7 @@ st.markdown("---")
 st.markdown("👥 **Team:** Théo Vienne · Noam Balter-Dejeux · Tolga Seckin · Théo Morales Crassier")
 st.markdown("---")
 
-# =========================
-# SIDEBAR OPTIONS
-# =========================
+
 st.sidebar.header("⚙️ Analysis Options")
 
 info = st.sidebar.multiselect(
@@ -87,16 +76,12 @@ info = st.sidebar.multiselect(
 st.sidebar.markdown("---")
 st.sidebar.info("💡 Tip: SMILES gives most accurate structure results")
 
-# =========================
-# HELPERS
-# =========================
+
 
 def show(label, value):
     st.write(f"**{label}** {value}")
 
-# =========================
-# RESULT DISPLAY
-# =========================
+
 def display_results(c):
 
     st.subheader("📋 General Information")
@@ -168,14 +153,12 @@ def display_results(c):
         st.subheader("🧬 3D Structure")
         draw_molecule_3d(c.smiles)
 
-# =========================
-# TABS
-# =========================
+
+
 tab1, tab2 = st.tabs(["🔍 Search", "✏️ Draw"])
 
-# =========================
-# TAB 1 - SEARCH
-# =========================
+
+
 with tab1:
     st.subheader("Molecule Search")
     col1, col2 = st.columns([1, 2])
@@ -197,9 +180,8 @@ with tab1:
             else:
                 st.error("No compound found")
 
-# =========================
-# TAB 2 - DRAW
-# =========================
+
+
 with tab2:
     st.subheader("Draw Molecule")
     st.info("Draw a molecule to analyze its structure")

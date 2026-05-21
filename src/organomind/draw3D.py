@@ -33,3 +33,12 @@ def draw_molecule_3d(smiles, style='stick', color='spectrum',
 
 
 
+if __name__ == "__main__":
+    import streamlit as st
+
+    st.title("3D Molecule Viewer")
+    
+    smiles = st.text_input("Enter a SMILES string", placeholder="e.g. CCO for ethanol")
+    
+    if smiles:
+        draw_molecule_3d(smiles)

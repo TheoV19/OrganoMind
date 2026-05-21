@@ -83,7 +83,7 @@ conda activate env.name
 #Clone the repository
 git clone https://github.com/TheoV19/OrganoMind.git
 
-#Naviguate to the Organomind folder
+#Naviguate to the OrganoMind folder
 cd path/to/organomind
 
 #Installs the dependencies locally as a user, make sure to activate your environment before doing so 

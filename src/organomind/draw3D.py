@@ -7,8 +7,13 @@ def run():
     import subprocess
     import sys
     from pathlib import Path
-    app_path = Path(__file__)
-    subprocess.run([sys.executable, "-m", "streamlit", "run", str(app_path)])
+    
+    if len(sys.argv) < 2:
+        print("Usage: organomind-3d <your_script.py>")
+        sys.exit(1)
+    
+    user_script = Path(sys.argv[1])
+    subprocess.run([sys.executable, "-m", "streamlit", "run", str(user_script)])
 
 
 def draw_molecule_3d(smiles, style='stick', color='spectrum',
@@ -31,14 +36,3 @@ def draw_molecule_3d(smiles, style='stick', color='spectrum',
     
     components.html(view._make_html(), height=height)
 
-
-
-if __name__ == "__main__":
-    import streamlit as st
-
-    st.title("3D Molecule Viewer")
-    
-    smiles = st.text_input("Enter a SMILES string", placeholder="e.g. CCO for ethanol")
-    
-    if smiles:
-        draw_molecule_3d(smiles)

@@ -1,5 +1,5 @@
 #type: ignore
-from organomind.nucelo_electro import electro_nucleo_sites_hsab
+from organomind.nucleo_electro import electro_nucleo_sites_hsab
 import pytest
 import pandas as pd
 

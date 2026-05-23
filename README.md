@@ -170,6 +170,7 @@ OrganoMind requires the following dependencies, which are automatically installe
 - `pillow`
 - `plotly`
 - `pymatgen`
+- `watchdog`
 
 If you encounter missing package errors, you can install them manually:
 ```bash

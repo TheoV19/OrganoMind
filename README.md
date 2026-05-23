@@ -86,10 +86,10 @@ git clone https://github.com/TheoV19/OrganoMind.git
 #Naviguate to the OrganoMind folder
 cd path/to/organomind
 
-#Installs the dependencies locally as a user, make sure to activate your environment before doing so 
+#Install the dependencies locally as a user, make sure to activate your environment before doing so 
 pip install .
     or
-#Installs the dependencies locally in editable mode, make sure to activate your environment before doing so
+#Install the dependencies locally in editable mode, make sure to activate your environment before doing so
 pip install -e . 
 ```
 

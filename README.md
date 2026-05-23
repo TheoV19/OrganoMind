@@ -19,7 +19,7 @@ OrganoMind
 
 
 ## 📚General informations📚
-OrganoMind is a project developped as part of Practical Progamming in chemistry EPFL (2026) during second year of study. OrganoMind is thought as a organic chemistry assistant that allows 3D visualization of molecules with built-in features that give both chemical and stereochemical properties that allows better understanding of chemical processes. 
+OrganoMind is a project developped as part of Practical Progamming in chemistry EPFL (2026) during second year of study. OrganoMind is thought as an organic chemistry assistant that allows 3D visualization of molecules with built-in features that give both chemical and stereochemical properties that allows better understanding of chemical processes. 
 
 ### 💪Features💪 
 - 3D visualization of molecules and IUPAC naming.

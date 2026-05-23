@@ -28,8 +28,6 @@ def find_isomers(smiles: str):
 
 
 
-#FindMolChiralCenter is a list of tuple: [(0, S), (3, R), (4, S)]
-
 
 def color_chiral(smiles: str):
     molecule = Chem.MolFromSmiles(smiles)

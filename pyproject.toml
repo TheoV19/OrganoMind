@@ -2,6 +2,8 @@
 name = "OrganoMind"
 version = "0.1.0"
 description = "Cheminformatics tools for molecular analysis"
+readme = "README.md" 
+license = {file = "LICENSE.txt"}
 authors = [
     {name = "Théo Vienne"},
     {name = "Théo Morales Crassier"},

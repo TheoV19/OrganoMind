@@ -181,6 +181,7 @@ pip install rdkit pubchempy streamlit pandas py3dmol streamlit-ketcher pillow pl
 If you encounter issues or the program doesn't work, try the following steps:
 
 1. Verify your active environment
+
 Make sure you are working in the environment where OrganoMind is installed.
 ```bash
 # Check which Python executable is currently active

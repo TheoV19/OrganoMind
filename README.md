@@ -204,6 +204,8 @@ If problems continue, try uninstalling and reinstalling OrganoMind:
 ```bash
 pip uninstall organomind
 pip install git+https://github.com/TheoV19/OrganoMind.git
+or
+pip install organomind
 ```
 3. Update pip if necessary
 

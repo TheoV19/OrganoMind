@@ -206,6 +206,7 @@ pip uninstall organomind
 pip install git+https://github.com/TheoV19/OrganoMind.git
 ```
 3. Update pip if necessary
+
 Sometimes, issues may arise due to an outdated pip. Thus, to update pip:
 - For virtual environments
 ```bash

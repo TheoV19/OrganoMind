@@ -27,7 +27,7 @@ OrganoMind is a project developped as part of Practical Progamming in chemistry 
 - Detection of aromatic groups and nomenclature of the group.
 - Detection of chiral centers, number of isomers and 2D visualization of the chiral center. 
 - Detection of acidic and basic groups, and estimation of the pKa of the molecule.
-- Detection of nucleophilic and electrophilic groups with attribution of the nucleophilic/electrophilic level.
+- Detection of the most nucleophilic and electrophilic sites in the molecule.
 - Determination of molecule's point group.
 
 ### 👥Contributions👥

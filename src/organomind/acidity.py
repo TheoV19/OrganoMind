@@ -39,6 +39,6 @@ def acid_base_estimate (smiles):
     df_acidic = pd.DataFrame(acidic_groups)
     df_basic = pd.DataFrame(basic_groups)
     
-    # print(acidic_groups, basic_groups)
+    
 
     return df_acidic, df_basic
